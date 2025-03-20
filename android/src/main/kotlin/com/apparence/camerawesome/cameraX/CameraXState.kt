@@ -417,15 +417,15 @@ data class CameraXState(
     override fun onOrientationChanged(orientation: Int) {
         imageAnalysis?.targetRotation = when (orientation) {
             in 225 until 315 -> {
-                Surface.ROTATION_90
+                Surface.ROTATION_0
             }
 
             in 135 until 225 -> {
-                Surface.ROTATION_180
+                Surface.ROTATION_0
             }
 
             in 45 until 135 -> {
-                Surface.ROTATION_270
+                Surface.ROTATION_0
             }
 
             else -> {
