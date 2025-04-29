@@ -98,16 +98,16 @@ class CamerawesomePlugin {
       CameraOrientations? newOrientation;
       switch (data) {
         case 'LANDSCAPE_LEFT':
-          newOrientation = CameraOrientations.landscape_left;
+          newOrientation = CameraOrientations.portrait_up;
           break;
         case 'LANDSCAPE_RIGHT':
-          newOrientation = CameraOrientations.landscape_right;
+          newOrientation = CameraOrientations.portrait_up;
           break;
         case 'PORTRAIT_UP':
           newOrientation = CameraOrientations.portrait_up;
           break;
         case 'PORTRAIT_DOWN':
-          newOrientation = CameraOrientations.portrait_down;
+          newOrientation = CameraOrientations.portrait_up;
           break;
         default:
       }
